@@ -3,7 +3,8 @@ import React from 'react'
 interface BoxData {
     heading: string,
     time: string,
-    note: string
+    note: string,
+    id: number
 }
 
 const NoteCard = (props: BoxData) => {
