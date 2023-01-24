@@ -8,8 +8,8 @@ interface BoxData {
 
 const NoteCard = (props: BoxData) => {
   return (
-    <div className='grid grid-cols-2 select-none m-2 p-2 bg-red-400 rounded-md hover:scale-[1.01] cursor-pointer transition'>
-          <div className=''>{props.heading}</div>
+    <div className='grid grid-cols-2 select-none m-2 p-2 bg-blue-400 hover:bg-blue-500 rounded-md hover:scale-[1.01] cursor-pointer transition'>
+      <div className=''>{props.heading}</div>
       <div className=''>{props.time}</div>
       <div>
         <div><img src='../locals/icon_remove.png'/></div>
