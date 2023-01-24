@@ -1,6 +1,7 @@
 import React from 'react';
 import NoteCard from './components/NoteCard';
 import data from './locals/note-data.json'
+import AddButton from './components/AddButton';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
           time={res.time}
           note={res.note} />);
       })}
+      <AddButton />
     </div>
   );
 }
