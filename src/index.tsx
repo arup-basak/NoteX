@@ -11,13 +11,6 @@ import {
   getComponentStack,
 } from 'react-chrome-extension-router';
 
-// const Three = ({ message }: any) => (
-//   <div onClick={() => popToTop()}>
-//     <h1>{message}</h1>
-//     <p>Click me to pop to the top</p>
-//   </div>
-// );
-
 const App = () => {
   useEffect(() => {
     const { component, props } = getCurrent();
@@ -30,7 +23,7 @@ const App = () => {
     console.log(`The stack has ${components.length} components on the stack`);
   });
   return (
-    <div className='min-w-[600px]'>
+    <div className=''>
       <Router>
         <PopUp />
       </Router>

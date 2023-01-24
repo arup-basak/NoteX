@@ -1,16 +1,14 @@
 import BackButton from "../components/BackButton";
-import PopUp from "./PopUp";
 
 const NoteEditor = (id: number) => (
-  <div className='flex flex-col'>
+  <div>
     <BackButton />
-    <input type="text"
-      className='w-fit p-2 m-2 outline-none bg-blue-400 text-lg'/>
-    <textarea
-      className='w-full p-2 m-2 bg-red-500 resize-none outline-none text-xl h-[400px]'></textarea>
-    {/* <button onClick={() => goTo(Three, { id })}>
-      Click me to go to component Three!
-    </button> */}
+    <div className="flex flex-col">
+      <input type="text"
+        className='w-[400px] outline-none bg-blue-300 text-lg m-2 p-2 rounded'/>
+      <textarea
+        className='bg-blue-200 w-[400px] resize-none outline-none text-xl h-[400px] m-2 p-2 rounded'></textarea>
+    </div>
   </div>
 );
 

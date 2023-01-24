@@ -32,7 +32,7 @@ const PopUp = () => {
         return <div>No Data</div>
     }
     return (
-        <div>
+        <div className='min-w-[400px]'>
             {data.map((res, i) => {
                 return (
                     <Link component={NoteEditor} props={{ message: i }}>
