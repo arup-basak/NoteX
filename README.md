@@ -1,4 +1,3 @@
-
 # NoteX
 
 NoteX is a powerful Chrome extension that enables users to easily take and store notes. Built with TypeScript, React, and Tailwind CSS, it offers a modern and intuitive user interface. Whether you need to jot down a quick reminder or create a detailed document, NoteX makes it easy to stay organized and on task. With its fast and reliable data storage, all your notes are always just a click away. NoteX is the perfect tool for anyone looking to boost their productivity and stay on top of their work.
@@ -26,10 +25,14 @@ HTML, Tailwind CSS, TypeScript, React, Chrome API
 
 **Client:** React, Redux, TailwindCSS
 
-## Run Locally
-
-
 Clone the project
+
+
+## Logo
+
+![1674628999170](public/logo512x512.png)
+
+## Run Locally
 
 ```bash
   git clone https://github.com/arup-basak/NoteX
@@ -53,6 +56,14 @@ Build the Extention
   npm run build
 ```
 
+To install the Chrome extension, follow these steps:
+
+1. Build the extension using the command "npm run build"
+2. Open Google Chrome and click on the three dots menu in the top right corner
+3. Select "More tools" and then "Extensions"
+4. Turn on developer mode from the top right corner
+5. Click on "Load unpacked" and select the "NoteX/build" folder
+6. The new extension will now be loaded and ready to use.
 
 ## Feedback
 
