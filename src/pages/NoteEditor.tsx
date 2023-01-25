@@ -29,10 +29,10 @@ const NoteEditor = (id: number) => {
           value={text}
         />
         <textarea
-          className='bg-blue-200 w-[400px] resize-none outline-none text-xl m-2 p-2 rounded'
+          className='bg-blue-200 w-[400px] resize-none outline-none text-md m-2 p-2 rounded'
           onKeyDown={() => update(id)}
-          rows={8}
-        ></textarea>
+          rows={10}
+        />
       </div>
     </>
   )
