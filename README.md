@@ -27,7 +27,6 @@ HTML, Tailwind CSS, TypeScript, React, Chrome API
 
 Clone the project
 
-
 ## Logo
 
 ![1674628999170](public/logo512x512.png)
@@ -58,8 +57,7 @@ Build the Extention
 
 To install the Chrome extension, follow these steps:
 
-1. Build the extension using the command "npm run build"
-2. Open Google Chrome and click on the three dots menu in the top right corner
+1. Open Google Chrome and click on the three dots menu in the top right corner
 3. Select "More tools" and then "Extensions"
 4. Turn on developer mode from the top right corner
 5. Click on "Load unpacked" and select the "NoteX/build" folder
