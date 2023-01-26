@@ -12,6 +12,20 @@ import {
     getComponentStack,
 } from 'react-chrome-extension-router';
 
+const AddButton = () => {
+    return (
+        <Link component={() => NoteEditor(data.length)}>
+            <div
+                className='font-2xl m-2 p-2 bg-red-400 hover:bg-red-500 transition hover:scale-[1.3] w-fit rounded-full'>
+                &#43;
+            </div>
+            <div className='hidden hover:block transition'>
+                Add Notes
+            </div>
+        </Link>
+    )
+}
+
 const PopUp = () => {
     if (data.length == 0) {
         return <div>No Data</div>
@@ -22,11 +36,14 @@ const PopUp = () => {
                 return (
                     <Link component={() => NoteEditor(i)}>
                         <NoteCard
+                            id={i}
                             heading={res.heading}
                             time={res.time}
-                            note={res.note} />
+                            note={res.note}
+                        />
                     </Link>)
             })}
+            <AddButton />
         </div>
     );
 };
